@@ -8,9 +8,9 @@ import './Header.css'
 function Header() {
   return (
     <header>
-      <Navbar bg="#121212" expand="lg">
+      <Navbar bg="#121212" expand="lg" breakpoints={['xxl', 'xl', 'lg', 'md', 'sm']}>
         <Container fluid>
-          <img className='img' src='images/download.png'
+          <img className='img' src='/images/download.png'
           alt="" width="80px" height="40px"/>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <DropdownButton  title="menu">
@@ -23,14 +23,10 @@ function Header() {
           <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll>
+            style={{ maxHeight: '100px' }}>
           </Nav>
-          <Form className="d-flex">
-            <input className="form-control me-2 "
-            type="search" 
-            placeholder="Search IMDb" 
-            aria-label="Search" />
+          <Form>
+            <Form.Control type='search' placeholder='search IMDb' />
           </Form>
           </Navbar.Collapse>
         </Container>

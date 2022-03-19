@@ -1,5 +1,6 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+
 
 import './Footer.css'
 
@@ -7,9 +8,11 @@ import './Footer.css'
 const Footer = () => {
   return (
     <footer>
-      <div class="h-25 d-inline-block">
-
-      </div>
+      <Container>
+        <Row>
+          <Col className="text-center">Footer</Col>
+        </Row>
+      </Container>
     </footer>
   )
 }

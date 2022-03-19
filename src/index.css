@@ -2,3 +2,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+main {
+    min-height: 85vh;
+    background-color: #d3d2ce;
+}
