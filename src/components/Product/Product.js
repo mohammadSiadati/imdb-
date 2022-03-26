@@ -1,13 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Card, Image } from 'react-bootstrap'
 
-function Product({product}) {
+const Product = ({product})  => {
   return (
     <Card className='p-2'>
-        <a href={`/product/${product._id}`}>
+        <Link to={`/product/${product._id}`}>
             <Image src={product.image} className='p-2'></Image> 
-            {product.name}   
-        </a>
+            {product.name}
+        </Link>
     </Card>
   )
 }

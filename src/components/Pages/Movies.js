@@ -21,7 +21,7 @@ const Movies = () => {
                 <Row>
                   {products.map((item) => {
                     return(
-                      <Row>
+                      <Row key={item._id}>
                         <Container className='py-3 border'>
                           <Product product={item} />
                         </Container>
