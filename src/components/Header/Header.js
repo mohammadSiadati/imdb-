@@ -12,7 +12,7 @@ function Header() {
       <Navbar bg="#121212" expand="lg" breakpoints={['xxl', 'xl', 'lg', 'md', 'sm']}>
         <Container fluid>
           <Link to={'/'}>
-            <img t className='img' src='/images/download.png'
+            <img  className='img' src='/images/download.png'
             alt="" width="80px" height="40px"/>
           </Link>
           <Navbar.Toggle aria-controls="navbarScroll" />

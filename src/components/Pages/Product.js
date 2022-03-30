@@ -1,15 +1,18 @@
 import React from 'react'
 
+
 import products from '../../products'
 
 const Product = ({match}) => {
   const product = products.find((item) => {
-    return item._id === match.params.id
+    return console.log('item',item),
+     console.log('match',match),
+     console.log('produt',product)
   })
 
   return (
     <div>
-      {product.name}
+      kkas
     </div>
   )
 }
