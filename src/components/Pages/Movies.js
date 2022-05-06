@@ -2,6 +2,8 @@ import React from 'react'
 
 import products from '../../products'
 
+import Pagination from './Pagination'
+
 import './Movies.css'
 
 import { Col, Container, Row} from 'react-bootstrap'
@@ -31,6 +33,7 @@ const Movies = () => {
                 </Row>
             </Col>
         </Row>
+        <Pagination pageIndex={1} pageSize={10} totalCount={products.length} />
     </Container>
   )
 }

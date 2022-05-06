@@ -11,14 +11,14 @@ import Product from './components/Pages/Product'
 
 
 const App = () => {
-  return (
+  return (  
     <Router>
       <Header />
         <main className='py-3'>
           <Container>
             <Routes>
               <Route exact path='/' element={<Movies />} />
-              <Route path='/product/:id' element={<Product />} />
+              <Route path='/product/:id'  element={<Product />} />
             </Routes>
           </Container>
         </main>
