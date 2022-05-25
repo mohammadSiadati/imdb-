@@ -11,12 +11,12 @@ const Product = ({product})  => {
 
   const likeHandler = () => {
     setVlueLike(valueLike + 1)
-    localStorage.setItem(`like_${product._id}`, valueLike)
+    localStorage.setItem(`like_${product._id}`, valueLike + 1)
   }
 
   const dislikeHandler = () => {
     setVlueDisLike(valueDisLike - 1)
-    localStorage.setItem(`dislike_${product._id}`, valueDisLike)
+    localStorage.setItem(`dislike_${product._id}`, valueDisLike - 1)
   }
 
   return (
