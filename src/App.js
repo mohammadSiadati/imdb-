@@ -7,7 +7,7 @@ import Footer from './components/Footer/Footer'
 
 import Movies from './components/Pages/Movies'
 import Product from './components/Pages/Product'
-
+import Search from './components/Pages/Search'
 
 
 const App = () => {
@@ -19,6 +19,7 @@ const App = () => {
             <Routes>
               <Route exact path='/' element={<Movies />} />
               <Route path='/product/:id'  element={<Product />} />
+              <Route path='/searchItem/:name' element={<Search />} />
             </Routes>
           </Container>
         </main>
